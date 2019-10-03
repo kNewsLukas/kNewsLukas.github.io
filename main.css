@@ -5,7 +5,7 @@
         --max-site-width: 85rem;
         --min-site-width: 30rem;
         --main-padding: 0rem;
-        --max-header-width: 50rem;
+        --max-header-width: 53rem;
         --min-header-width: 25rem;
         --header-padding: 1rem;
         --max-item-width: 25rem;
@@ -29,6 +29,18 @@
         --item-margin: 0rem 0rem 1rem 0rem;
 
     }
+}
+
+:root {
+    --youtube-color: rgb(210,100,100);
+    --patreon-color: rgb(220,160,100);
+    --paypal-color: rgb(120,180,210);
+    --nda-color: rgb(180,210,120);
+    --youtube-bcolor: rgb(210,100,100,0.5);
+    --patreon-bcolor: rgb(220,160,100,0.5);
+    --paypal-bcolor: rgb(120,180,210,0.5);
+    --nda-bcolor: rgb(180,210,120,0.5);
+    --border-color: rgb(240,240,240,0.5);
 }
 
 html {
@@ -58,16 +70,16 @@ h3 {
     text-align: center;
 }
 h3#nda {
-    color: rgb(180,210,120);
+    color: var(--nda-color);
 }
 h3#you {
-    color: rgb(210,100,100);
+    color: var(--youtube-color);
 }
 h3#pat {
-    color: rgb(220,160,100);
+    color: var(--patreon-color);
 }
 h3#pay {
-    color: rgb(120,180,210);
+    color: var(--paypal-color);
 }
 
 a {
@@ -125,6 +137,20 @@ footer {
     background-color: rgb(65,65,65);
     max-width: var(--max-item-width);
     min-width: var(--min-item-width);
+    border-top: 5px solid var(--border-color);
+}
+
+#you.content-item {
+    border-top: 5px solid var(--youtube-bcolor);
+}
+#pat.content-item {
+    border-top: 5px solid var(--patreon-bcolor);
+}
+#pay.content-item {
+    border-top: 5px solid var(--paypal-bcolor);
+}
+#nda.content-item {
+    border-top: 5px solid var(--nda-bcolor);
 }
 
 .content-gif {
@@ -148,6 +174,7 @@ footer {
 }
 
 .header-item {
+    border-bottom: 5px solid var(--border-color);
     margin: var(--item-margin);
     padding: var(--item-padding);
     background-color: rgb(60,60,60);
