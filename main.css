@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
 
 :root {
-    --max-site-width: 60;
+    --max-site-width: 85em;
     --min-site-width: 25em;
     --main-padding: 1em;
+    --max-header-width: 50em;
+    --min-header-width: 25em;
+    --header-padding: 1em;
     --max-item-width: 25em;
-    --min-item-width: 20em;
+    --min-item-width: 25em;
     --item-padding: 1em;
     --item-margin: 0.5em;
     
@@ -26,6 +29,14 @@ body {
     width: 100%;
 }
 
+a {
+    color: rgb(230,120,120);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(240,200,200);
+}
+
 .main-flex {
     display: flex;
     flex-direction: column;
@@ -36,6 +47,10 @@ body {
 }
 
 header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
     background-color: rgb(55,55,55);
     max-width: var(--max-site-width);
     min-width: var(--min-site-width);
@@ -43,6 +58,8 @@ header {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
     background-color: rgb(55,55,55);
     max-width: var(--max-site-width);
     min-width: var(--min-site-width);
@@ -67,4 +84,12 @@ footer {
     background-color: rgb(65,65,65);
     max-width: var(--max-item-width);
     min-width: var(--min-item-width);
+}
+
+.header-item {
+    margin: var(--item-margin);
+    padding: var(--item-padding);
+    background-color: rgb(60,60,60);
+    max-width: var(--max-header-width);
+    min-width: var(--min-header-width);
 }
