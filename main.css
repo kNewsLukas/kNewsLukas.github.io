@@ -8,7 +8,7 @@
   width: device-width ;
 } 
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:769px) {
     :root {
         --max-site-width: 85rem;
         --min-site-width: 30rem;
@@ -23,7 +23,7 @@
 
     }
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
     :root {
         --max-site-width: 100%;
         --min-site-width: 100%;
