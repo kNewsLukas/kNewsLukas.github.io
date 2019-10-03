@@ -4,7 +4,7 @@
     :root {
         --max-site-width: 85rem;
         --min-site-width: 30rem;
-        --main-padding: 1rem;
+        --main-padding: 0rem;
         --max-header-width: 50rem;
         --min-header-width: 25rem;
         --header-padding: 1rem;
@@ -56,6 +56,18 @@ p {
 
 h3 {
     text-align: center;
+}
+h3#nda {
+    color: rgb(180,210,120);
+}
+h3#you {
+    color: rgb(210,100,100);
+}
+h3#pat {
+    color: rgb(220,160,100);
+}
+h3#pay {
+    color: rgb(120,180,210);
 }
 
 a {
