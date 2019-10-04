@@ -190,7 +190,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: rgb(120,200,120);
-    width:5%;
+    width:4%;
     height:5rem;
 }
 
@@ -198,7 +198,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: rgb(90,100,90);
-    width:95%;
+    width:96%;
     height:5rem;
 }
 
