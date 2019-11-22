@@ -153,6 +153,10 @@ footer {
     border-top: 5px solid var(--border-color);
 }
 
+@keyframes example {
+    
+}
+
 #you.content-item {
     border-top: 5px solid var(--youtube-bcolor);
 }
@@ -180,10 +184,10 @@ footer {
 }
 
 #gif1.content-gif {
-    background-image: url('assets/starship-capsule.gif');
+    background-image: url('assets/191111_falcon9.gif');
 }
 #gif2.content-gif {
-    background-image: url('assets/super-wiggle.gif');
+    background-image: url('assets/191120_bulkhead.gif');
 }
 
 .progress_l {
