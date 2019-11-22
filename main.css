@@ -172,7 +172,7 @@ footer {
 
 .content-gif {
     align-content: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.8;
     margin: var(--item-margin);
